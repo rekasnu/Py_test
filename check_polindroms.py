@@ -32,7 +32,7 @@ def check_if_number_is_polindrom(test_num):
 
 def check_numbers():
     for num in range (1,1001):
-        for base in range (2,35):
+        for base in range (2,36):
             data =[]
             result = None
             t_num = convert_number_to_base_x(num, base)
@@ -40,7 +40,6 @@ def check_numbers():
             result = check_if_number_is_polindrom(f_num)
             if result == True:
                 final_list.append([num,base])
-                break;
     return final_list
 
 
