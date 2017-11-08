@@ -40,11 +40,15 @@ def check_numbers():
             result = check_if_number_is_polindrom(f_num)
             if result == True:
                 final_list.append([num,base])
+                break
     return final_list
 
 
 print 'Please wait'
+mfile = open('test.txt', 'w')
 fl = check_numbers()
 for d in fl:
     print d
+    mfile.write("%s\n" %d)
 print 'Finished'
+mfile.close()
