@@ -46,7 +46,7 @@ print 'Please wait'
 mfile = open('test.txt', 'w')
 fl = check_numbers()
 for d in fl:
-    print d
+#    print d
     mfile.write("%s\n" %d)
 print 'Finished'
 mfile.close()
