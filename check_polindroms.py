@@ -1,8 +1,5 @@
 import math
 
-    
-final_list=[]
-
 def convert_number_to_base_x(n, b):
     if n == 0:
         return [0]
@@ -31,6 +28,7 @@ def check_if_number_is_polindrom(test_num):
         return False
 
 def check_numbers():
+    final_list=[]
     for num in range (1,1001):
         for base in range (2,36):
             data =[]
